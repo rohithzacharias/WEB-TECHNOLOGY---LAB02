@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TechZone Customer Registration</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:#eef5ff;
+}
+.container{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+h2{
+    text-align:center;
+    color:#003366;
+}
+label{
+    font-weight:bold;
+}
+input,select,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:12px;
+    box-sizing:border-box;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:auto;
+}
+input[type="submit"],
+input[type="reset"]{
+    width:48%;
+    background:#0056b3;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+input[type="reset"]{
+    background:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>TechZone Customer Registration</h2>
+
+<form>
+
+<label>Customer Name</label>
+<input type="text"
+placeholder="Enter your name"
+pattern="[A-Za-z ]+"
+required>
+
+<label>Email Address</label>
+<input type="email"
+placeholder="example@gmail.com"
+required>
+
+<label>Password</label>
+<input type="password"
+placeholder="Create Password"
+required>
+
+<label>Age</label>
+<input type="number"
+min="18"
+max="60"
+required>
+
+<label>Date of Birth</label>
+<input type="date"
+required>
+
+<label>Gender</label><br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+
+<br><br>
+
+<label>Interested Products</label><br>
+
+<input type="checkbox"> Laptop
+<input type="checkbox"> Mobile
+<input type="checkbox"> Headphones
+<input type="checkbox"> Smart Watch
+
+<br><br>
+
+<label>Preferred Category</label>
+
+<select required>
+<option value="">Select Category</option>
+<option>Laptops</option>
+<option>Mobiles</option>
+<option>Accessories</option>
+<option>Gaming</option>
+</select>
+
+<label>Delivery Address</label>
+
+<textarea rows="4"
+placeholder="Enter your address"
+required></textarea>
+
+<label>Favourite Theme Color</label>
+<input type="color">
+
+<label>Upload ID Proof</label>
+<input type="file">
+
+<label>Shopping Experience Level</label>
+<input type="range"
+min="0"
+max="100">
+
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+
+</form>
+
+</div>
+
+</body>
+</html>
